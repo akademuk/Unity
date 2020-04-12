@@ -1,0 +1,467 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Geo', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+@font-face {
+  font-family: "AbrahamLincoln";
+  src: url(../fonts/AbrahamLincoln.woff) format("woff"), url(../fonts/AbrahamLincoln.ttf) format("true-type"), url(../fonts/AbrahamLincoln.eot) format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GothamBlack";
+  src: url(../fonts/Gotham-Black.woff) format("woff"), url(../fonts/Gotham-Black.ttf) format("true-type"), url(../fonts/Gotham-Black.eot) format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MyriadPro";
+  src: url(../fonts/MyriadPro-Regular.woff) format("woff"), url(../fonts/MyriadPro-Regular.ttf) format("true-type"), url(../fonts/MyriadPro-Regular.eot) format("embedded-opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/*Color*/
+/*Fonts*/
+body {
+  font-family: "AbrahamLincoln", sans-serif;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: #ffa800;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 110px;
+}
+
+h2 {
+  font-size: 6.25rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #000;
+  font-size: calc(6.25rem + 15vw);
+  text-transform: uppercase;
+}
+
+h4 {
+  color: #ffa800;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  background: url(../../images/header-banner.png), black;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 24% 0;
+  display: flex;
+  position: relative;
+}
+
+header:after {
+  content: "";
+  display: block;
+  width: 700px;
+  height: 21%;
+  border: 20px solid #ffffff;
+  border-bottom: none;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -350px;
+}
+
+.trigger {
+  display: none;
+}
+
+.header-left-container {
+  width: 95%;
+  padding-top: 8%;
+}
+
+.header-right-container {
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "GothamBlack", sans-serif;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  background-color: #000;
+  width: 12%;
+  margin: 0 49%;
+  padding: 6px 0;
+  letter-spacing: 4.8px;
+}
+
+.logo-navigation {
+  margin-bottom: 16.5%;
+}
+
+.logo-navigation nav {
+  width: 58%;
+  margin: 61px auto 0 auto;
+}
+
+.logo-navigation nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 115px;
+}
+
+.logo-navigation nav ul li a {
+  font-size: 1.25rem;
+  color: #fff;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.tittle {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tittle-text {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-top: 1.8%;
+  letter-spacing: 8px;
+  margin-left: 8.3%;
+}
+
+.scroll {
+  margin: 13.9% 0 23.7% 0;
+}
+
+.scroll a {
+  width: 19px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  margin: 65px auto;
+  padding-left: 6.1%;
+}
+
+.scroll-link {
+  font-size: 1.625rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+  opacity: 0.7;
+  letter-spacing: 5.2px;
+  padding-left: 6.3%;
+}
+
+.scroll-link:before {
+  content: "";
+  display: block;
+  border: 2px solid #fff;
+  opacity: 0.3;
+  border-bottom: none;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.header-right-container-phone {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-right-container-phone ul {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.header-right-container-phone ul li {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+}
+
+.header-right-container-phone ul li a {
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+  color: #fff;
+}
+
+.header-right-container-copyright {
+  writing-mode: vertical-lr;
+  margin-bottom: 100px;
+  transform: rotate(180deg);
+}
+
+.line {
+  background-color: #ffffff;
+  opacity: 0.11;
+  width: 2px;
+  height: 19.6%;
+  display: flex;
+  margin: 0;
+}
+
+.header-link-item {
+  background: #ffa800;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.header-right-container-copyright p {
+  height: max-content;
+  text-transform: uppercase;
+  letter-spacing: 4.8px;
+}
+
+.fa-phone {
+  font-family: "font-awesome";
+  font-size: 1.5rem !important;
+  background: transparent;
+}
+
+@media (max-width: 1600px) {
+  header:after {
+    content: "";
+    height: 15%;
+  }
+}
+
+@media (max-width: 1200px) {
+  header:after {
+    content: "";
+    height: 10%;
+    width: 500px;
+    margin-left: -250px;
+  }
+  .logo-navigation nav {
+    width: 80%;
+  }
+  .logo {
+    width: 15%;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo {
+    width: 20%;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+  .tittle-text {
+    font-size: 1.5rem;
+  }
+  .header-right-container-phone ul {
+    height: 60%;
+  }
+  .header-right-container-copyright {
+    margin-bottom: 20px;
+  }
+  .header-link-item {
+    margin-bottom: 20px;
+  }
+  .logo-navigation nav ul li a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    background-position: center;
+  }
+  .logo-navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 20px;
+  }
+  .logo-navigation nav {
+    width: auto;
+    margin: 0;
+  }
+  .logo-navigation nav ul {
+    padding-left: 0;
+    position: absolute;
+    text-align: left;
+  }
+  .logo-navigation nav ul li {
+    border-bottom: 1px solid #222;
+    padding: 10px;
+    background: #000;
+    opacity: 0.9;
+  }
+  h1 {
+    margin: 0;
+  }
+  .tittle-text {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .logo {
+    margin: 0;
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    width: 20%;
+  }
+  .header-right-container-copyright p {
+    font-size: 0.5rem;
+  }
+  .header-right-container-phone ul li a {
+    font-size: 0.7rem;
+  }
+  .header-left-container {
+    width: 75%;
+  }
+  .header-right-container {
+    width: 25%;
+  }
+  header:after {
+    width: 200px;
+    margin-left: -120px;
+    border: 10px solid #fff;
+    border-bottom: none;
+  }
+  .tittle {
+    width: 100%;
+  }
+  .trigger {
+    display: inline-block;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .trigger i {
+    display: block;
+    width: 30px;
+    height: 6px;
+    margin: 4px auto;
+    background: #222;
+  }
+  .nav .menu {
+    display: none;
+  }
+  .nav .show {
+    display: block;
+  }
+  .header-right-container-phone .menu-phone {
+    display: none;
+  }
+  .header-right-container-phone .show-phone {
+    display: flex;
+  }
+  .scroll {
+    margin-left: 25%;
+  }
+  .menu-phone {
+    position: absolute;
+    top: 18%;
+    height: 78% !important;
+    display: flex;
+    justify-content: space-around !important;
+    background: #000;
+    opacity: 0.9;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 568px) {
+  .logo {
+    font-size: 1rem;
+    left: 35%;
+    right: 35%;
+    width: 30%;
+    padding: 5px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .tittle-text {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+  }
+  .scroll-link {
+    font-size: 0.7rem;
+  }
+  .scroll-link:before {
+    width: 20px;
+    height: 20px;
+  }
+  .scroll a {
+    margin-top: 15px;
+    width: 10px;
+    height: 12px;
+  }
+  .header-right-container-copyright p {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+  }
+  .logo-navigation nav ul li a {
+    font-size: 0.7rem;
+  }
+  .header-link-item {
+    width: 30px;
+    height: 30px;
+  }
+  .fa-phone {
+    font-size: 1rem !important;
+  }
+  .header-right-container-phone ul li a {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+  }
+  .menu-phone {
+    height: 73% !important;
+  }
+  header:after {
+    width: 100px;
+    margin-left: -70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

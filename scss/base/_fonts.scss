@@ -1,0 +1,29 @@
+/*font-family: 'Lato', sans-serif;
+font-family: 'Geo', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+@font-face {
+  font-family: "AbrahamLincoln";
+  src: url(../fonts/AbrahamLincoln.woff) format("woff"),
+    url(../fonts/AbrahamLincoln.ttf) format("true-type"),
+    url(../fonts/AbrahamLincoln.eot) format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GothamBlack";
+  src: url(../fonts/Gotham-Black.woff) format("woff"),
+    url(../fonts/Gotham-Black.ttf) format("true-type"),
+    url(../fonts/Gotham-Black.eot) format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MyriadPro";
+  src: url(../fonts/MyriadPro-Regular.woff) format("woff"),
+    url(../fonts/MyriadPro-Regular.ttf) format("true-type"),
+    url(../fonts/MyriadPro-Regular.eot) format("embedded-opentype");
+  font-weight: 300;
+  font-style: normal;
+}

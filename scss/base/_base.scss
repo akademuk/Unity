@@ -1,0 +1,46 @@
+body {
+  font-family: $AbrahamLincoln;
+  font-weight: 400;
+  color: $white;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+h1 {
+  color: $orange;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-left: 110px;
+}
+h2 {
+  font-size: 6.25rem;
+  text-transform: uppercase;
+}
+h3 {
+  color: $black;
+  font-size: calc(6.25rem + 15vw);
+  text-transform: uppercase;
+}
+h4 {
+  color: $orange;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+}
+h5 {
+  font-family: $Roboto;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
