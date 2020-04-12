@@ -81,7 +81,7 @@ p {
 }
 
 header {
-  background: url(/images/header-banner.png), black;
+  background: url(../images/header-banner.png), black;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,6 +386,7 @@ header:after {
   }
   .nav .menu {
     display: none;
+    z-index: 2;
   }
   .nav .show {
     display: block;
@@ -412,6 +413,14 @@ header:after {
 }
 
 @media (max-width: 568px) {
+  header {
+    height: 100vh;
+  }
+  .tittle {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+  }
   .logo {
     font-size: 1rem;
     left: 35%;
@@ -421,10 +430,12 @@ header:after {
   }
   h1 {
     font-size: 2rem;
+    margin-left: 25px;
   }
   .tittle-text {
     font-size: 0.7rem;
     letter-spacing: 2px;
+    text-align: center;
   }
   .scroll-link {
     font-size: 0.7rem;
@@ -432,6 +443,12 @@ header:after {
   .scroll-link:before {
     width: 20px;
     height: 20px;
+  }
+  .scroll-link a img {
+    object-fit: contain;
+  }
+  .scroll {
+    margin-top: 110%;
   }
   .scroll a {
     margin-top: 15px;

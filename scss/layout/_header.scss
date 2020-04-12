@@ -1,5 +1,5 @@
 header {
-  background: url(/images/header-banner.png), rgba(0, 0, 0, 1);
+  background: url(../images/header-banner.png), rgba(0, 0, 0, 1);
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,6 +309,7 @@ header {
   .nav {
     .menu {
       display: none;
+      z-index: 2;
     }
     .show {
       display: block;
@@ -337,6 +338,14 @@ header {
   }
 }
 @media (max-width: 568px) {
+  header {
+    height: 100vh;
+  }
+  .tittle {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+  }
   .logo {
     font-size: 1rem;
     left: 35%;
@@ -346,10 +355,12 @@ header {
   }
   h1 {
     font-size: 2rem;
+    margin-left: 25px;
   }
   .tittle-text {
     font-size: 0.7rem;
     letter-spacing: 2px;
+    text-align: center;
   }
   .scroll-link {
     font-size: 0.7rem;
@@ -357,8 +368,14 @@ header {
       width: 20px;
       height: 20px;
     }
+    a {
+      img {
+        object-fit: contain;
+      }
+    }
   }
   .scroll {
+    margin-top: 110%;
     a {
       margin-top: 15px;
       width: 10px;
