@@ -81,7 +81,7 @@ p {
 }
 
 header {
-  background: url(../images/header-banner.png), black;
+  background: url(/images/header-banner.png), black;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
